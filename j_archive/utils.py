@@ -32,6 +32,7 @@ def download_htmls_gdrive(data_dir='data', overwrite=False, verbose=True):
 
     if not html_dir.exists() or overwrite:
         print(f"Downloading HTML data from Google Drive...")
+        os.makedirs(html_dir)
         download_gdrive(HTMLS_GDRIVE_ID, html_zip_filepath)
         unzip_archive(html_zip_filepath, verbose=verbose)
         os.remove(html_zip_filepath)
@@ -46,6 +47,7 @@ def download_clues_gdrive(data_dir='data', overwrite=False, verbose=True):
 
     if not clues_dir.exists() or overwrite:
         print(f"Downloading clue data from Google Drive...")
+        os.makedirs(clues_dir)
         download_gdrive(CLUES_GDRIVE_ID, clues_zip_filepath)
         unzip_archive(clues_zip_filepath, verbose=verbose)
         os.remove(clues_zip_filepath)
