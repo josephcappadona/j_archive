@@ -2,6 +2,8 @@
 
 ## Usage
 
+[Colab Notebook](https://colab.research.google.com/drive/11TwcFRXhZVnFe0kxnaHiO8LCP4jgA5P8)
+
 Install this library:
 
 ```bash
@@ -19,6 +21,7 @@ for clue in clues:
 ```
 
 The first time you attempt to load clues, the library will download the clues data from Google Drive. If you wish to do this explicitly, you can run `j_archive.download_clues_gdrive()`.
+
 
 ## Building from scratch
 
