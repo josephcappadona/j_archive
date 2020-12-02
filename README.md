@@ -5,7 +5,7 @@
 Install this library:
 
 ```bash
-python3 -m pip install https://github.com/josephcappadona/j_archive.git
+pip install git+https://github.com/josephcappadona/j_archive.git
 ```
 
 Run the following in python:
